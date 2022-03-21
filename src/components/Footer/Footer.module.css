@@ -1,0 +1,88 @@
+@import "../AllCss/root.css";
+
+.FooterAlign {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* margin: 0; */
+}
+
+.wrapper {
+  display: inline-flex;
+}
+
+.wrapper .icon {
+  position: relative;
+  background-color: var(--pure);
+  border-radius: 50%;
+  padding: 1.1rem;
+  margin: 1rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 1rem 1rem var(--shadow);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 1.4rem;
+  background-color: var(--pure);
+  color: var(--pure);
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 0.8rem;
+  width: 0.8rem;
+  background-color: var(--pure);
+  bottom: -0.3rem;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper a {
+  color: var(--dark);
+}
+.wrapper a:hover {
+  color: var(--pure);
+}
+.wrapper .icon:hover .tooltip {
+  top: -4.5rem;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.wrapper .icon:hover span {
+  color: #070606;
+}
+.wrapper .icon:hover span a,
+.wrapper .icon:hover .tooltip {
+  color: var(--pure);
+  text-shadow: 0px -0.1rem 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background-color: var(--dark);
+  color: var(--pure);
+}
+@media (max-width: 20em) {
+  .wrapper .icon {
+    font-size: 1rem;
+  }
+}

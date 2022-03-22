@@ -71,7 +71,7 @@ export default function Work(props) {
             <div className={`${classesWork.face} ${classesWork.face2}`}>
               <div className={classesWork.Workcontent}>
                 <h4>Mapty</h4>
-                <h5>#Vanilla JavaScript</h5>
+                <h5>#vanillajavaScript</h5>
                 <p>
                   It is a map that shows us the current location by using API.
                   We can point a mark on the map for doing exercise. The point
@@ -113,7 +113,7 @@ export default function Work(props) {
             <div className={`${classesWork.face} ${classesWork.face2}`}>
               <div className={classesWork.Workcontent}>
                 <h4>WeatherApp</h4>
-                <h5>#Vanilla JavaScript</h5>
+                <h5>#vanilla avaScript</h5>
                 <p>
                   It gives a weather report of a place which was selected by the
                   user. It contains theme changing option and a clock. I used
@@ -127,7 +127,7 @@ export default function Work(props) {
           </div>
         </div>
       </div>
-      <Footer class={classesWork.content_3}></Footer>
+      <Footer class={classesWork.content_3w}></Footer>
     </div>
   );
 }

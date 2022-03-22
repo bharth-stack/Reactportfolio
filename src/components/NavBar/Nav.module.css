@@ -26,6 +26,7 @@ span {
   transition-delay: 0.7s;
   z-index: 1;
   padding-left: 0.7rem;
+  color: var(--dark);
 }
 
 .item::before {

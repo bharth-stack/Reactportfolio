@@ -65,13 +65,3 @@
     display: block;
   }
 }
-@media (max-width: 40em) {
-  .open {
-    transform: translateX(-40rem);
-  }
-}
-@media (max-width: 30em) {
-  .open {
-    transform: translateX(0rem);
-  }
-}

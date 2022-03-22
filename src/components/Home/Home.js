@@ -4,6 +4,7 @@ import classes from "../AllCss/BodyStyle.module.css";
 import Footer from "../Footer/Footer.js";
 import Button from "../Buttons/Button";
 import MobNav from "../MobileNav/MobNav.js";
+import { NavLink, Link } from "react-router-dom";
 export default function Home(props) {
   return (
     <Fragment>
@@ -42,7 +43,11 @@ export default function Home(props) {
             community at Hack Club-SIST and I am also a Microsoft Student Learn
             Ambassador and postman student expert.
           </p>
-          <Button name={"More About Me"}></Button>
+          <Button name={"More About Me"}>
+            <NavLink className={classes.more} to="/about">
+              More About Me
+            </NavLink>
+          </Button>
         </div>
         <Footer class={classes.content_3}></Footer>
       </div>

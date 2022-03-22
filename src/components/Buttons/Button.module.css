@@ -22,3 +22,6 @@
   box-shadow: 0 0.5rem 1rem rgba(var(--dark), 0.15);
   transform: translateY(0);
 }
+NavLink {
+  text-decoration: none;
+}

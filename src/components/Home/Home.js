@@ -43,7 +43,7 @@ export default function Home(props) {
             community at Hack Club-SIST and I am also a Microsoft Student Learn
             Ambassador and postman student expert.
           </p>
-          <Button name={"More About Me"}>
+          <Button>
             <NavLink className={classes.more} to="/about">
               More About Me
             </NavLink>

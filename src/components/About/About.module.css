@@ -67,7 +67,6 @@
 }
 @media (max-width: 70em) {
   .AboutContainer {
-    /* grid-template-rows: repeat(5, 1fr); */
     grid-template-rows: 16rem 16rem 6rem repeat(1, 1fr) 20rem;
   }
   .content_3a {
@@ -202,8 +201,7 @@
   .content_3a {
     grid-column: 2/3;
     grid-row: 7/8;
-    justify-self: start;
-    margin-left: 7.4rem;
+    margin: 0 2rem;
   }
 }
 @media (max-width: 27em) {

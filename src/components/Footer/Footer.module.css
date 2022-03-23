@@ -36,7 +36,7 @@
   color: var(--pure);
   padding: 0.5rem 0.8rem;
   border-radius: 0.5rem;
-  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1rem 1rem var(--transparent);
   opacity: 0;
   pointer-events: none;
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -72,7 +72,7 @@
 .wrapper .icon:hover span a,
 .wrapper .icon:hover .tooltip {
   color: var(--pure);
-  text-shadow: 0px -0.1rem 0px rgba(0, 0, 0, 0.1);
+  text-shadow: 0px -0.1rem 0px var(--transparent);
 }
 
 .wrapper .facebook:hover,

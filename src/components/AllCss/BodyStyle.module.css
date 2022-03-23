@@ -132,6 +132,7 @@ body {
 }
 .more {
   text-decoration: none;
+  color: var(--dark);
 }
 @keyframes slide {
   0% {
@@ -304,7 +305,7 @@ body {
 
 @media (max-width: 26.75em) {
   html {
-    font-size: 55%;
+    font-size: 66%;
   }
   .container {
     height: 100%;
@@ -322,14 +323,12 @@ body {
     grid-row: 2/4;
     align-self: center;
     max-width: 95%;
-    /* margin: 0; */
     padding: 0;
   }
   .content_3 {
     grid-column: 3/6;
     grid-row: 5/6;
     align-self: center;
-    /* justify-self: end; */
   }
 }
 @media (max-width: 20em) {
